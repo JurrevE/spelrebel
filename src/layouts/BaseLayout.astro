@@ -1,5 +1,8 @@
 ---
 import HeaderComponent from "../components/HeaderComponent.astro"
+import FooterComponent from "../components/FooterComponent.astro"
+
+
 import '../style/global.css'
 ---
 
@@ -12,8 +15,8 @@ import '../style/global.css'
 	</head>
 	<body>
         <HeaderComponent />
-		<h1>Astro</h1>
         <slot />
+        <FooterComponent />
 	</body>
 </html>
  

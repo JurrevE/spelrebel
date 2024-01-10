@@ -1,10 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import '../style/global.css'
+import circle from '../../public/circle-outline.svg'
+import { Image } from "astro:assets";
 
 
 ---
 
 <BaseLayout>
-	<h2>test</h2>
+	<section class="text-test">
+		<h2 class="text-h2">Hallo Corne</h2>
+	</section>
+	<section class="svg-section">
+		<!-- <Icon name="circle-outline" id="svg-circle"/> -->
+		<Image src={circle} class="svg-circle" alt="Hallo" />
+	</section>
+	<section class="test-section"></section>
+	<script src="../scripts/main.js"></script>
+	
 </BaseLayout>
-
