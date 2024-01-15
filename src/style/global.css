@@ -14,6 +14,17 @@
     background: #8cd0e7;
 }
 
+:root {
+    --pink-main: #ECBCCF;
+    --LBlue-main: #61C7CB;
+    --green-main: #6DB67C;
+    --orange-main: #EE6922;
+    --yellow-main: #FABC2F;
+    --white-main: #F6F8F7;
+    --Dblue-main: #29336E;
+    --LblueBg: #ABDFE1;
+}
+
 container { 
     width: 100%;
     margin-left: auto;
@@ -71,21 +82,25 @@ container {
     margin: 0;
 }
 
-header{
-    display: flex;
-    background-color: black;
-    padding: 2rem;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
+header{
+    
+    background-color: var(--orange-main)
+    
+}
+
 
 nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    height: 4rem;
 }
 
 nav ul li{
@@ -95,7 +110,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: var(--white-main);
     text-decoration: none;
     margin-right: 2rem;
 }
@@ -103,6 +118,17 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
+.signupbutton {
+    height: 3rem;
+    width: 7rem;
+    background-color: #29336E;
+    border: none;
+    color: var(--white-main);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
 
 
 .svg-circle {
