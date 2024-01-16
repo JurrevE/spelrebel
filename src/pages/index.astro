@@ -7,21 +7,29 @@ import { Image } from "astro:assets";
 ---
 
 <BaseLayout>
-	<section class="flower-section">
+	<section>
+	<div class="flower-section">
 		<h1>How does it work</h1>
 		<div class="flower-content">
+			<div class="blur-filter"></div>
 			<div class="flower-img">
 				<FlowerSection />
 			</div>
 		<div class="text-container">
-			<FlowerText class="air-text" title="Bram" paragraph="al deze kut tekst holy shit nog meer tekst"  buttonText="kut button"/>
-			<!-- <FlowerText class=fire-text title="Jurre" paragraph="mooi man lekker kort ook"  buttonText="Hallo"/>
-			<FlowerText class=earth-text title="Corné" paragraph="Had ook wel wat korter gekund lieve schat"  buttonText="kan"/>
-			<FlowerText class=water-text title="Bart" paragraph="Wat een ontiegelijke moanig mooie website"  buttonText="geld"/> -->
+			<div class="air-text"><FlowerText title="Lucht" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis."  buttonText="button"/></div>
+			<div class="fire-text"><FlowerText title="Vuur" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis."  buttonText="button"/></div>
+			<div class="earth-text"><FlowerText title="Aarde" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis."  buttonText="button"/></div>
+			<div class="water-text"><FlowerText title="Water" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis."  buttonText="button"/></div>
 		</div>
 
 		</div>
-	</section>
+	</div>
+</section>
 
+	<div class="red-square">
+		Placeholder text
+	</div>
+	
 	<script src="../scripts/main.js"></script>
 </BaseLayout>
+

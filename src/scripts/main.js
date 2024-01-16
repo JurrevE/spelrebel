@@ -12,20 +12,58 @@ let tl = gsap.timeline({
     start: 'top top',
     end: "6000",
     markers: true,
-    pin: '.flower-section',
-    scrub: 1 
-  }
+    pin: true,
+    scrub: 1,
+  },
 });
+
+tl.fromTo('.flower-content',{
+x: -800,
+
+
+},
+{
+x: 0,
+ease: "power2.in)",
+
+}
+)
+
+
+tl.fromTo('.air-text', {
+  opacity: 0,
+},
+{
+  opacity: 1,
+}
+)
+
+tl.to('.air-text',{
+  opacity: 0,
+  delay: 2,
+})
 
 tl.to('.flowerImg', {
   rotate: 45,
   ease: "power2.in",
-
 })
 
 tl.to('.flowerImg', {
   rotate: 90,
   ease: "power2.out",
+})
+
+tl.fromTo('.fire-text', {
+  opacity: 0
+},
+{
+  opacity: 1
+}
+)
+
+tl.to('.fire-text', {
+  opacity: 0,
+  delay: 2,
 })
 
 tl.to('.flowerImg', {
@@ -39,6 +77,19 @@ tl.to('.flowerImg', {
   ease: "power2.out",
 })
 
+tl.fromTo('.earth-text', {
+  opacity: 0
+},
+{
+  opacity: 1
+}
+)
+
+tl.to('.earth-text', {
+  opacity: 0,
+  delay: 2,
+})
+
 tl.to('.flowerImg', {
   rotate: 225,
   delay: 1.5,
@@ -49,11 +100,15 @@ tl.to('.flowerImg', {
   ease: "power2.out",
 })
 
-// tl.from('.air-text',{
-//   opacity: 0,
-// } )
+tl.fromTo('.water-text', {
+  opacity: 0
+},
+{
+  opacity: 1
+}
+)
 
-// tl.to('.air-text',{
-//   opacity: 1,
-//   delay: 1
-// } )
+tl.to('.water-text', {
+  opacity: 0,
+  delay: 2,
+})
