@@ -1,0 +1,13 @@
+---
+import '../style/global.css'
+
+let { title } = Astro.props
+let { paragraph } = Astro.props
+let { buttonText } = Astro.props
+---
+
+<div class="flower-text">
+    <h2>{title}</h2>
+    <p>{paragraph}</p>
+    <button>{buttonText}</button>
+</div>

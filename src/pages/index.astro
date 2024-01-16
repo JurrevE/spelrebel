@@ -1,29 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import '../style/global.css'
+import "../style/global.css";
 import FlowerSection from "../components/FlowerSection.astro";
+import FlowerText from "../components/FlowerText.astro";
 import { Image } from "astro:assets";
-
-
-
 ---
 
 <BaseLayout>
 	<section class="flower-section">
 		<h1>How does it work</h1>
 		<div class="flower-content">
-		<div class="flower-img">
-			<FlowerSection />
-		</div>
-			<div class="flower-container">
-				<h2>1. Lucht</h2>
-				<p>Tesks hom csfmzm,s.zfzcfsmmcmcf</p>
-				<button>Sign up</button>
+			<div class="flower-img">
+				<FlowerSection />
 			</div>
+		<div class="text-container">
+			<FlowerText class="air-text" title="Bram" paragraph="al deze kut tekst holy shit nog meer tekst"  buttonText="kut button"/>
+			<!-- <FlowerText class=fire-text title="Jurre" paragraph="mooi man lekker kort ook"  buttonText="Hallo"/>
+			<FlowerText class=earth-text title="Corné" paragraph="Had ook wel wat korter gekund lieve schat"  buttonText="kan"/>
+			<FlowerText class=water-text title="Bart" paragraph="Wat een ontiegelijke moanig mooie website"  buttonText="geld"/> -->
+		</div>
+
 		</div>
 	</section>
-
-    
 
 	<script src="../scripts/main.js"></script>
 </BaseLayout>

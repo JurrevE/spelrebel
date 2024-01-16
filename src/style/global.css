@@ -199,13 +199,47 @@ footer{
     position: relative;
     transform-origin: center center;
     height: 100%;
-    width: 60%;
+    width: 100%;
 }
 
 
 
 .flower-content {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     align-items: center;
+}
+
+.flower-text{
+    position: absolute;
+    padding-left: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.text-container h2{
+    font-size: 4rem;
+}
+
+.text-container p{
+    font-size: 1.5rem;
+}
+
+.text-container button{
+    height: 3rem;
+    width: 7rem;
+    background-color: #29336E;
+    border: none;
+    color: var(--white-main);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
