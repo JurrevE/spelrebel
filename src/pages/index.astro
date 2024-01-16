@@ -1,21 +1,29 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import '../style/global.css'
-import circle from '../../public/circle-outline.svg'
+import FlowerSection from "../components/FlowerSection.astro";
 import { Image } from "astro:assets";
+
 
 
 ---
 
 <BaseLayout>
-	<section class="text-test">
-		<h2 class="text-h2">Hallo Corne</h2>
+	<section class="flower-section">
+		<h1>How does it work</h1>
+		<div class="flower-content">
+		<div class="flower-img">
+			<FlowerSection />
+		</div>
+			<div class="flower-container">
+				<h2>1. Lucht</h2>
+				<p>Tesks hom csfmzm,s.zfzcfsmmcmcf</p>
+				<button>Sign up</button>
+			</div>
+		</div>
 	</section>
-	<section class="svg-section">
-		<!-- <Icon name="circle-outline" id="svg-circle"/> -->
-		<Image src={circle} class="svg-circle" alt="Hallo" />
-	</section>
-	<section class="test-section"></section>
+
+    
+
 	<script src="../scripts/main.js"></script>
-	
 </BaseLayout>
