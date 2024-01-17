@@ -175,8 +175,9 @@ gsap.from('.partnerlogodiv',{
   y: +100,
   opacity: 0, 
   scrollTrigger: {
-    trigger: '.reviewsection',
-    start: '81% top',
+    trigger: '.partnerlogodiv',
+    // start: '81% top',
+    start: 'center bottom',
     end: "bottom bottom",
 
     

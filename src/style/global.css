@@ -332,6 +332,11 @@ footer{
     color: #fff;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
 .review-card-container{
     display: flex;
     justify-content: space-around;
@@ -548,16 +553,47 @@ form {
 
 .short-info-section{
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
 }
+
+
+
+.short-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
     
+.short-info-container h2 {
+    font-size: 3rem;
+}
 
 
+.short-info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
 
+.top-info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
 
+.middle-info{
+display: flex;
+justify-content: center;
+}
 
+.bottom-info{
+display: flex;
+justify-content: end;
+}
 
 
 .footersection {
@@ -574,17 +610,45 @@ form {
     margin: 0 auto ;
     grid-template-columns: 3fr 1fr 1fr ;
     align-items: center;
+    gap: 4rem;
 }
 
 .linkerkant {
+height: 80%;
 color:var(--white-main);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.formrow6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.emailsubmitbutton {
+    background: var(--yellow-main);
+    height: 3rem;
+    width: 6rem;
+    color: var(--Dblue-main);
+    border-radius: 10px;
+
 }
 
 .middel {
+    height: 80%;
     color: var(--white-main);
-    justify-items: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-
+.middel a {
+    
+        color: var(--white-main);
+        text-decoration: none; 
+}
 .rechterkant {
     color: var(--white-main);
 }
