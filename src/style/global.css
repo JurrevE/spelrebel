@@ -261,10 +261,6 @@ footer{
     cursor: pointer;
 }
 
-.red-square{
-    height: 100vh;
-    background-color: pink;
-}
 
 .sliding-section{
     height: 100vh;
@@ -322,6 +318,65 @@ footer{
     right: -50px;
 }
 
+.review-section{
+    height: 100vh;
+    background: pink;
+    text-align: center;
+}
+
+.review-card-container{
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+
+}
+
+.review-card{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.quote-mark {
+    height: 2rem;
+
+}
+
+.quote-mark img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-text-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.card-text-container p{
+    font-size: 1rem;
+}
+
+.card-star-rating{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+
+.card-star-rating img{
+    height: 100%;
+    width: 100%;
+}
+
+
 
 .signupformsection {
     height: 100vh;
@@ -346,6 +401,7 @@ footer{
     width: 36rem;
     border-radius: 8px;
     padding-right: 2rem;
+    z-index: 2;
 }
 .formbigdiv h1 {
     text-align: center;
@@ -407,28 +463,22 @@ input[type=text], [type=email], [type=tel] {
     border-bottom: 1px solid #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.review-section{
-    text-align: center;
-}
-
 form {
     border-radius: 10%;
 }
 
+.partnersection {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
 .hero-section{
     height: 100vh;
-
 }
 
 .yellow-btn{
@@ -436,8 +486,51 @@ form {
     border-radius: 1rem;
     background-color: var(--yellow-main);
     border: none;
-    padding: 2re;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 4rem;
 }
 .hero-section{
-    overflow: hidden
+    overflow: hidden;
+}
+
+.atropos-inner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.acro-title{
+    font-size: 9rem;
+}
+
+.acro-text{
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.blob-image{
+    position: absolute;
+    z-index: -1;
+    width: 45rem;
+    height: auto;
+}
+
+.span-acro-title{
+    color: white;
+
+}
+
+.hero-title{
+    height: auto;
+    width: 50rem;
+}
+
+.hero-bg{
+    width: 100%;
+    z-index: -1;
 }

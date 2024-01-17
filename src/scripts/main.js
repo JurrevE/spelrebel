@@ -8,8 +8,8 @@ import Atropos from 'atropos';
 // Initialize
 const myAtropos = Atropos({
   el: '.my-atropos',
-  activeOffset: 40,
-  shadowScale: 1.05,
+  activeOffset: 10,
+  shadowScale: 0,
   onEnter() {
     console.log('Enter');
   },
@@ -21,9 +21,6 @@ const myAtropos = Atropos({
   }
 });
 
-setTimeout(() => {
-  myAtropos.destroy();
-}, 10000)
 
 // -------------- GSAP -------------------
 
@@ -156,4 +153,17 @@ tl.fromTo('.water-text', {
 tl.to('.water-text', {
   opacity: 0,
   delay: 2,
+})
+
+
+gsap.from('.formbigdiv',{
+  y: +100,
+  opacity: 0, 
+  scrollTrigger:  {
+    trigger: '.signupformsection',
+    start: 'top top',
+    end: "bottom bottom",
+    ease: "Power2.in",
+    
+  }
 })

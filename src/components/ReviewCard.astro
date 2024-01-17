@@ -1,22 +1,26 @@
 ---
 import '../style/global.css'
 let { paragraph } = Astro.props
----
 
-<section class="review-section">
-    <h2>See what other think</h2>
-    <div>
-        <div>
-            <div>
-            <img src="" alt="">
+import  Quote  from '../../public/Quote.svg'
+import Star from '../../public/Sterretje.svg'
+import { Image } from 'astro:assets'
+---
+    <div class="review-card">
+        <div class="card-text-container">
+            <div class="quote-mark">
+                <Image  src={Quote} alt="quoteMark"/>
             </div>
             <p>{paragraph}</p>
-            <div>
-            <img src="" alt="">
+            <div class="quote-mark">
+                <Image src={Quote} alt=QuoteMark/>
             </div>
         </div>
-        <div>
-        <img src="" alt="">
+        <div class="card-star-rating">
+            <Image src={ Star } alt='star'/>
+            <Image src={ Star } alt='star'/>
+            <Image src={ Star } alt='star'/>
+            <Image src={ Star } alt='star'/>
+            <Image src={ Star } alt='star'/>
         </div>
     </div>
-</section>

@@ -1,6 +1,9 @@
 ---
 import "../style/global.css";
-import YellowButton from "../components/YellowButton.astro"
+import { Image } from "astro:assets";
+import blob from '../../public/blob1.png'
+import heroTitle from '../../public/hero-title.svg'
+import heroBg from "../../public/headerbg.png"
 ---
 
 <section class="hero-section">
@@ -12,8 +15,12 @@ import YellowButton from "../components/YellowButton.astro"
       <div class="atropos-rotate">
         <!-- inner container (required) -->
         <div class="atropos-inner">
+            <!-- <Image src={ heroBg } alt="hero background" class="hero-bg-"/> -->
             <div class="atropos-inner-content">
-            <button class="yellow-btn">
+                <Image src={ heroTitle } alt="hero title" class="hero-title" data-atropos-offset="4" />
+                <p class="acro-text" data-atropos-offset="0">Embrace balance, cultivate a strong <br> body and clear mind</p>
+                <Image src={ blob } alt="blob image" class="blob-image" data-atropos-offset="-10"/>
+            <button class="yellow-btn" data-atropos-offset="0">
                 <p>I want to join now</p>
             </button> 
             </div>
