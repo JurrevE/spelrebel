@@ -7,10 +7,13 @@ import { Image } from "astro:assets";
 import SlidingSection from "../components/SlidingSection.astro";
 import ReviewCard from "../components/ReviewCard.astro"
 import HeroSection from "../components/HeroSection.astro"
+import FooterComponent from "../components/FooterComponent.astro";
+import ShortInfo from "../components/ShortInfo.astro"
 ---
 
 <BaseLayout>
 	<HeroSection/>
+	<ShortInfo />
 	<SlidingSection />
 	<section>
 	<div class="flower-section">
@@ -31,13 +34,14 @@ import HeroSection from "../components/HeroSection.astro"
 	</div>
 </section>
 		<section class="review-section">
-			<h2>See what other think</h2>
+			<h1>See what other think</h1>
 			<div class="review-card-container">
 				<ReviewCard paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua." />
 				<ReviewCard paragraph="Messi is de beste voetballer allertijden en het feit dat Ronaldo soms met hem wordt vergelen is een schande." />
 				<ReviewCard paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua." />
 			</div>
 		</section>
+
 	<script src="../scripts/main.js"></script>
 </BaseLayout>
 

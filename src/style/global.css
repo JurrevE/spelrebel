@@ -90,6 +90,7 @@ body {
     justify-content: space-between;
     height: 100%;
     font-family: "Montserrat", sans-serif;
+    background-color: var(--white-main);
 }
 header{
     
@@ -192,6 +193,7 @@ footer{
 .flower-section h1 {
     text-align: center;
     margin: 3rem;
+    font-size: 3rem;
 }
 
 .flower-section img{
@@ -321,14 +323,18 @@ footer{
 .review-section{
     height: 100vh;
     width: 100%;
-    background: pink;
+    background: var(--Dblue-main);
     text-align: center;
+}
+
+.review-section h1{
+    margin: 3rem;
+    color: #fff;
 }
 
 .review-card-container{
     display: flex;
     justify-content: space-around;
-    height: 20%;
 
 }
 
@@ -337,20 +343,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
+    height: 15rem;
     width: 30%;
     border-radius: 1rem;
+    border: 1px solid #EE6922;
 }
 
-.quote-mark {
-    height: 4rem;
-
-}
-
-.quote-mark img{
-    height: 100%;
-    width: 100%;
-}
 
 .card-text-container{
     display: flex;
@@ -360,23 +358,26 @@ footer{
 }
 
 .card-text-container p{
-
     font-size: 1rem;
     width: 70%;
     text-align: left;
 }
 
-.card-star-rating{
-    height: 20%;
-    width: 70%;
-    display: flex;
+.card-star-container{
     margin: 0 auto;
+}
+
+.card-star-rating{
+    display: flex;
+    justify-content: space-around;
+    height: 2.5rem;
+    gap: 1rem;
+    width: 100%;
 }
 
 .card-star-rating img{
     height: 100%;
     width: 100%;
-    padding: 0.5rem;
 }
 
 
@@ -480,6 +481,9 @@ form {
     width: 100%;
 }
 
+.partnersection h2 {
+    font-size: 3rem;
+}
 
 .hero-section{
     height: 100vh;
@@ -538,4 +542,49 @@ form {
 
 .hero-bg{
     width: 100%;
+    z-index: -2;
+    position: absolute;
+}
+
+.short-info-section{
+    display: flex;
+    
+    width: 100%;
+    height: 100vh;
+}
+    
+
+
+
+
+
+
+
+.footersection {
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    background: #1E2654;
+}
+
+.footercontent {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    margin: 0 auto ;
+    grid-template-columns: 3fr 1fr 1fr ;
+    align-items: center;
+}
+
+.linkerkant {
+color:var(--white-main);
+}
+
+.middel {
+    color: var(--white-main);
+    justify-items: space-around;
+}
+
+.rechterkant {
+    color: var(--white-main);
 }

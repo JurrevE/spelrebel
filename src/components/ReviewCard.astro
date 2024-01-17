@@ -3,6 +3,7 @@ import '../style/global.css'
 let { paragraph } = Astro.props
 
 import  Quote  from '../../public/Quote.svg'
+import QuoteEnd from '../../public/Quote2.svg'
 import Star from '../../public/Sterretje.svg'
 import { Image } from 'astro:assets'
 ---
@@ -12,15 +13,17 @@ import { Image } from 'astro:assets'
                 <Image  src={Quote} alt="quoteMark"/>
             </div>
             <p>{paragraph}</p>
-            <div class="quote-mark">
-                <Image src={Quote} alt=QuoteMark/>
+            <div class="quote-mark-end">
+                <Image src={QuoteEnd} alt=QuoteMark/>
             </div>
         </div>
-        <div class="card-star-rating">
-            <Image src={ Star } alt='star'/>
-            <Image src={ Star } alt='star'/>
-            <Image src={ Star } alt='star'/>
-            <Image src={ Star } alt='star'/>
-            <Image src={ Star } alt='star'/>
+        <div class="card-star-container">
+            <div class="card-star-rating">
+                <Image src={ Star } alt='star'/>
+                <Image src={ Star } alt='star'/>
+                <Image src={ Star } alt='star'/>
+                <Image src={ Star } alt='star'/>
+                <Image src={ Star } alt='star'/>
+            </div>
         </div>
     </div>

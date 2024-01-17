@@ -5,6 +5,7 @@ import Atropos from 'atropos';
 
 // -------------- ATROPOS ----------------
 
+
 // Initialize
 const myAtropos = Atropos({
   el: '.my-atropos',
@@ -166,6 +167,18 @@ gsap.from('.formbigdiv',{
     start: 'top top',
     end: "bottom bottom",
     ease: "Power2.in",
+    
+  }
+})
+
+gsap.from('.partnerlogodiv',{
+  y: +100,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.reviewsection',
+    start: '81% top',
+    end: "bottom bottom",
+
     
   }
 })
