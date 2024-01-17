@@ -5,10 +5,12 @@ import FlowerSection from "../components/FlowerSection.astro";
 import FlowerText from "../components/FlowerText.astro";
 import { Image } from "astro:assets";
 import SlidingSection from "../components/SlidingSection.astro";
+import ReviewCard from "../components/ReviewCard.astro"
+import HeroSection from "../components/HeroSection.astro"
 ---
 
 <BaseLayout>
-	
+	<HeroSection/>
 	<SlidingSection />
 	<section>
 	<div class="flower-section">
@@ -31,6 +33,7 @@ import SlidingSection from "../components/SlidingSection.astro";
 
 	<div class="red-square">
 		Placeholder text
+		<ReviewCard paragraph="Hello my brotha " />
 	</div>
 	
 	<script src="../scripts/main.js"></script>

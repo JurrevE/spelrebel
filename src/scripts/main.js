@@ -1,27 +1,33 @@
 import { gsap } from "gsap";    
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import 'atropos/css'
+import Atropos from 'atropos';
 
+// -------------- ATROPOS ----------------
+
+// Initialize
+const myAtropos = Atropos({
+  el: '.my-atropos',
+  activeOffset: 40,
+  shadowScale: 1.05,
+  onEnter() {
+    console.log('Enter');
+  },
+  onLeave() {
+    console.log('Leave');
+  },
+  onRotate(x, y) {
+    console.log('Rotate', x, y);
+  }
+});
+
+setTimeout(() => {
+  myAtropos.destroy();
+}, 10000)
+
+// -------------- GSAP -------------------
 
 gsap.registerPlugin(ScrollTrigger);
-
-// let slidingtl = gsap.timeline({
-//   scrolltrigger: {
-//     trigger: 'sliding-section',
-//     start: 'top top',
-//     end: "1000",
-//     markers: true,
-//     pin: true,
-//     scrub: 1,
-//   },
-// });
-
-// slidingtl.fromTo('orangebblockcontainer',{
-//   x: -800,
-// },{
-// x: 0,
-
-// }
-// )
 
 gsap.from('.orangeblockcontainer',{
   x: -200,
@@ -30,7 +36,6 @@ gsap.from('.orangeblockcontainer',{
     trigger: 'sliding-section',
     start: 'top top',
     end: "bottom bottom",
-    markers: true,
     ease: "Power2.in",
     toggleActions: "play pause reverse reverse",
   }
@@ -43,7 +48,6 @@ gsap.from('.rightsidetext',{
     trigger: 'sliding-section',
     start: 'top top',
     end: "bottom bottom",
-    markers: true,
     toggleActions: "play pause reverse reverse",
   }
 })
@@ -53,7 +57,6 @@ let tl = gsap.timeline({
     trigger: '.flower-section',
     start: 'top top',
     end: "6000",
-    markers: true,
     pin: true,
     scrub: 1,
   },

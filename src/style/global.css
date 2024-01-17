@@ -311,8 +311,8 @@ footer{
 .orangeblock-img{
     position: absolute;
     min-width: 20rem;
-    left: -5rem;
-    top: -2rem;
+    left: -2rem;
+    top: -1rem;
 }
 
 .orangeblock-img2{
@@ -320,6 +320,124 @@ footer{
     width: 10rem;
     bottom: -40px;
     right: -50px;
-    
-    
+}
+
+
+.signupformsection {
+    height: 100vh;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/getintouchbg.png");
+    background-size: cover;
+
+}
+
+.form {
+    background-color: var(--white-main)
+}
+
+
+
+.formbigdiv {
+    background: white;
+    height: 23rem;
+    width: 36rem;
+    border-radius: 8px;
+    padding-right: 2rem;
+}
+.formbigdiv h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 3rem;
+}
+
+.formrow1 {
+    display: flex;
+    justify-content: space-around;
+}
+.formrow2 {
+    display: flex;
+    justify-content: space-around;
+}
+.formrow3 {
+    display: flex;
+    width: 20rem;
+    margin-left: 2.3rem;
+}
+#user_message {
+    width: 26.5rem;
+}
+#userdata .createbtn {
+    margin-left: 21rem;
+}
+
+.createaccountdiv {
+    height: 33.3333%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.createbtn {
+    height: 3rem;
+    width: 11rem;
+    background-color: darkred;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 2.5rem;
+    align-self: flex-end;
+}
+
+input:focus {
+    border: solid 1px blue;
+    box-shadow:  4px 5px 13px 2px #000000;
+
+
+}
+
+input[type=text], [type=email], [type=tel] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.review-section{
+    text-align: center;
+}
+
+form {
+    border-radius: 10%;
+}
+
+.hero-section{
+    height: 100vh;
+
+}
+
+.yellow-btn{
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: var(--yellow-main);
+    border: none;
+    padding: 2re;
+}
+.hero-section{
+    overflow: hidden
 }
