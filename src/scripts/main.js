@@ -28,6 +28,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.orangeblockcontainer',{
   x: -200,
+  delay: 0.5,
   opacity: 0, 
   scrollTrigger: {
     trigger: 'sliding-section',
@@ -40,6 +41,7 @@ gsap.from('.orangeblockcontainer',{
 
 gsap.from('.rightsidetext',{
   x: 200,
+  delay: 0.5,
   opacity: 0, 
   scrollTrigger: {
     trigger: 'sliding-section',
