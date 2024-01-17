@@ -226,6 +226,10 @@ footer{
     align-items: center;
 }
 
+.flower-text p {
+    margin-bottom: 1rem;
+}
+
 /* .text-container{
     display: flex;
     justify-content: flex-start;
@@ -260,4 +264,62 @@ footer{
 .red-square{
     height: 100vh;
     background-color: pink;
+}
+
+.sliding-section{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sliding-section-content{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orangeblock {
+    background-color: var(--orange-main);
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+}
+
+.orangeblockcontainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rightsidetext{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    width: 50%;
+    overflow: hidden;
+}
+
+.orangeblock-img{
+    position: absolute;
+    min-width: 20rem;
+    left: -5rem;
+    top: -2rem;
+}
+
+.orangeblock-img2{
+    position: absolute;
+    width: 10rem;
+    bottom: -40px;
+    right: -50px;
+    
+    
 }
