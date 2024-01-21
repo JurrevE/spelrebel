@@ -1,5 +1,7 @@
 ---
 import "../style/global.css"
+import Copyright from "../../public/Copyrights.png"
+import Socials from '../../public/socials.png'
 
 import { Image } from "astro:assets"
 ---
@@ -32,11 +34,12 @@ import { Image } from "astro:assets"
         
         <div class="rechterkant">
             <div class="bovenkant"><h2>Socials</h2>
-                <h2>Socialmediaimages</h2>
+                <Image src={ Socials } alt="Social media images"/>
+
             </div>
             
 
-            <h2>Copyright images</h2>
+            <Image src={ Copyright } alt="Copyright images" />
             
            
 

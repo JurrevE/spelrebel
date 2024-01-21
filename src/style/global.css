@@ -663,13 +663,11 @@ height: 6rem;
 }
 
 #check_box {
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 5px;
-    padding-top: 3px;
+    
     cursor: pointer;
     font-size: 16px;
+    height: 5rem;
+    width: 5rem;
 }
 
 #user_email1 {
