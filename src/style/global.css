@@ -652,3 +652,40 @@ justify-content: space-around;
 .rechterkant {
     color: var(--white-main);
 }
+
+
+.formdiv6 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-evenly;
+height: 6rem;
+}
+
+#check_box {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#user_email1 {
+    width: 25rem;
+}
+
+.rechterkant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.bovenkant {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+}
