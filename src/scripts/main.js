@@ -29,7 +29,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".joyful", {
   x: -200,
-  delay: 1,
+  delay: 0,
   opacity: 0, 
   scrollTrigger: {
     trigger: '.short-info-section',
@@ -41,19 +41,20 @@ gsap.from(".joyful", {
 
 gsap.from(".top-info", {
   x: -200,
-  delay: 1,
+  delay: 0.3,
   opacity: 0, 
   scrollTrigger: {
     trigger: '.short-info-section',
     start: 'top center',
     end: "bottom bottom",
     ease: "Power2.in",
+    
   }
 })
 
 gsap.from(".middle-info", {
   y: +200,
-  delay: 1,
+  delay: 0.5,
   opacity: 0, 
   scrollTrigger: {
     trigger: '.top-info',
@@ -65,7 +66,7 @@ gsap.from(".middle-info", {
 
 gsap.from(".bottom-info", {
   x: 100,
-  delay: 1.8,
+  delay: 0.9,
   opacity: 0, 
   scrollTrigger: {
     trigger: '.middle-info',
@@ -76,35 +77,34 @@ gsap.from(".bottom-info", {
   }
 })
 
-
-
-
+gsap.from('.orangeblockcontainer',{
+  x: -200,
+  delay: 0.5,
+  opacity: 0, 
+  duration: 0.3,
+  scrollTrigger: {
+    trigger: '.sliding-section-content',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+    toggleActions: "play pause reverse",
+  }
+})
 
 gsap.from('.rightsidetext',{
   x: 200,
-  delay: 1,
+  delay: 0.5,
+  duration: 0.3,
   opacity: 0, 
   scrollTrigger: {
     trigger: '.sliding-section-content',
     start: 'top center',
     end: "bottom bottom",
     ease: "Power2.in",
-    toggleActions: "play pause reverse reverse",
+    toggleActions: "play pause reverse", 
   }
 })
 
-gsap.from('.orangeblockcontainer',{
-  x: -200,
-  delay: 1,
-  opacity: 0, 
-  scrollTrigger: {
-    trigger: '.sliding-section-content',
-    start: 'top center',
-    end: "bottom bottom",
-    ease: "Power2.in",
-    toggleActions: "play pause reverse reverse",
-  }
-})
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -235,5 +235,42 @@ gsap.from('.partnerlogodiv',{
     end: "bottom bottom",
 
     
+  }
+})
+
+
+gsap.from(".linkerkant", {
+  x: -50,
+  delay: 0,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.footercontent',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+  }
+})
+
+gsap.from(".middel", {
+  y: 40,
+  delay: 0,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.footercontent',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+  }
+})
+
+gsap.from(".rechterkant", {
+  x: +50,
+  delay: 0,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.footercontent',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
   }
 })

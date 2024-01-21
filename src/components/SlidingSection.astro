@@ -1,22 +1,18 @@
 ---
 import "../style/global.css";
+import RozeBlob from "../../public/rozebigblob.png"
+import Pilaar from "../../public/pilaar.png"
+import Zit from "../../public/lekkerzitten.png"
+import { Image } from "astro:assets";
 ---
 
 <section class="sliding-section">
 	<div class="sliding-section-content">
 		<div class="orangeblockcontainer">
-			<div class="orangeblock">
-				<img
-					class="orangeblock-img"
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TwJReN4u8CRItmEBhu2xQDkWyCgzqIldVTRs6of_0Q&s"
-					alt=""
-				/>
-				<img
-					class="orangeblock-img2"
-					src="https://static.printler.com/cache/1/6/9/d/0/6/169d068ec175ef1d4829953ebbe5312b9b4d1055.jpg"
-					alt="mooiehond"
-				/>
-			</div>
+			<Image class=orangeblock src={RozeBlob} alt="rozeblobfoto" />
+			<Image class="orangeblock-img" src={Pilaar} alt="yogapic" />
+			<Image class="orangeblock-img2" src={Zit} alt="yogapic2 " />
+ 
 		</div>
 		<div class="rightsidetext">
 			<h2>Stretch your muscles and your minds</h2>

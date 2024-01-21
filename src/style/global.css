@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #add8e6;
+    background: var(--orange-main);
 }
 
 ::-webkit-scrollbar-track {
@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #8cd0e7;
+    background: var(--orange-main);
 }
 
 :root {
@@ -282,7 +282,7 @@ footer{
 }
 
 .orangeblock {
-    background-color: var(--orange-main);
+    
     height: 30rem;
     width: 30rem;
     position: relative;
@@ -308,16 +308,18 @@ footer{
 
 .orangeblock-img{
     position: absolute;
-    min-width: 20rem;
+    height: 17rem;
+    width: 17rem;
     left: -2rem;
     top: -1rem;
 }
 
 .orangeblock-img2{
     position: absolute;
-    width: 10rem;
-    bottom: -40px;
-    right: -50px;
+    height: 17rem;
+    width: 17rem;
+    bottom: +60px;
+    right: +40px;
 }
 
 .review-section{
@@ -667,14 +669,17 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
 }
 .middel a {
     
         color: var(--white-main);
         text-decoration: none; 
+        overflow: hidden;
 }
 .rechterkant {
     color: var(--white-main);
+    overflow: hidden;
 }
 
 
@@ -704,6 +709,7 @@ height: 6rem;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+    overflow: hidden;
 }
 
 .bovenkant {
