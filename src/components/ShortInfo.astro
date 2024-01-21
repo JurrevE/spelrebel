@@ -1,20 +1,40 @@
 ---
 import "../style/global.css";
-import handIcon from "../../public/hand.png"
+import handIcon from "../../public/hand.png";
+import BloemIcon from "../../public/bloem.png"
+import OtherIcon from "../../public/hihihi.png"
+import VrouwIcon from "../../public/vrouw.png"
+import ManIcon from "../../public/man.png"
 import { Image } from "astro:assets";
 ---
 
 <section class="short-info-section">
-    <div class="short-info-container">
-        <h2>Be joyful, be playful!</h2>
-        <div class="short-info-content">
-            <div class="top-info">
-                <Image src={ handIcon } alt="hand icon"/>
-                <p>Join the community and open yourself up to others! <br> We are there to help and support each other at any time.</p> </div>
-            <div class="middle-info"><p>Relax your body, clear your mind and see what you are <br> truly capable of as you test your own limits.</p> </div>
-            <div class="bottom-info"><p>Regardless of your age, abilities, acroyoga is for <br> everybody and will wake up playfulness in everyone.</p> </div>
-        </div>
-    </div>
-
-
+	<div class="short-info-container">
+        <Image class="vrouwicon" src={VrouwIcon} alt="vrouwimage" />
+        <Image class="manicon" src={ManIcon} alt="manimage" />
+		<h2 class="joyful">Be joyful, be playful!</h2>
+		<div class="short-info-content">
+			<div class="top-info">
+				<Image src={handIcon} alt="hand icon" />
+				<p>
+					Join the community and open yourself up to others! <br /> We are there
+					to help and support each other at any time.
+				</p>
+			</div>
+			<div class="middle-info">
+                <Image src={BloemIcon} alt="bloem icon" />
+				<p>
+					Relax your body, clear your mind and see what you are <br /> truly capable
+					of as you test your own limits.
+				</p>
+			</div>
+			<div class="bottom-info">
+                <Image class="othericon" src={OtherIcon} alt="other icon" />
+				<p>
+					Regardless of your age, abilities, acroyoga is for <br /> everybody and
+					will wake up playfulness in everyone.
+				</p>
+			</div>
+		</div>
+	</div>
 </section>

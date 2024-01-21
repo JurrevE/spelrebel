@@ -588,13 +588,37 @@ form {
 .middle-info{
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 .bottom-info{
 display: flex;
 justify-content: end;
+align-items: center;
+overflow: hidden;
 }
 
+
+.othericon {
+    margin-right: 1rem;
+}
+.manicon {
+    z-index: 1;
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    top:1300px;
+    left: 100px;
+
+}
+.vrouwicon {
+    z-index: 1;
+    height: 12rem;
+    width: 25rem;
+    position: absolute;
+    top:1350px;
+    right: 100px;
+}
 
 .footersection {
     height: 50vh;
@@ -672,6 +696,7 @@ height: 6rem;
 
 #user_email1 {
     width: 25rem;
+    color: white;
 }
 
 .rechterkant {

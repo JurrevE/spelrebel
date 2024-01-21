@@ -27,27 +27,81 @@ const myAtropos = Atropos({
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from('.orangeblockcontainer',{
+gsap.from(".joyful", {
   x: -200,
-  delay: 0.5,
+  delay: 1,
   opacity: 0, 
   scrollTrigger: {
-    trigger: 'sliding-section',
-    start: 'top top',
+    trigger: '.short-info-section',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+  }
+})
+
+gsap.from(".top-info", {
+  x: -200,
+  delay: 1,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.short-info-section',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+  }
+})
+
+gsap.from(".middle-info", {
+  y: +200,
+  delay: 1,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.top-info',
+    start: 'top center',
+    end: "bottom bottom",
+    ease: "Power2.in",
+  }
+})
+
+gsap.from(".bottom-info", {
+  x: 100,
+  delay: 1.8,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.middle-info',
+    start: 'top 90%',
+    end: "bottom bottom",
+    ease: "Power2.in",
+    
+  }
+})
+
+
+
+
+
+gsap.from('.rightsidetext',{
+  x: 200,
+  delay: 1,
+  opacity: 0, 
+  scrollTrigger: {
+    trigger: '.sliding-section-content',
+    start: 'top center',
     end: "bottom bottom",
     ease: "Power2.in",
     toggleActions: "play pause reverse reverse",
   }
 })
 
-gsap.from('.rightsidetext',{
-  x: 200,
-  delay: 0.5,
+gsap.from('.orangeblockcontainer',{
+  x: -200,
+  delay: 1,
   opacity: 0, 
   scrollTrigger: {
-    trigger: 'sliding-section',
-    start: 'top top',
+    trigger: '.sliding-section-content',
+    start: 'top center',
     end: "bottom bottom",
+    ease: "Power2.in",
     toggleActions: "play pause reverse reverse",
   }
 })
