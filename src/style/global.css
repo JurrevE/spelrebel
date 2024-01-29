@@ -26,7 +26,9 @@
     --Dblue-main: #29336E;
     --LblueBg: #ABDFE1;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 container { 
     width: 100%;
     margin-left: auto;
@@ -323,7 +325,7 @@ footer{
 }
 
 .review-section{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: var(--Dblue-main);
     text-align: center;
